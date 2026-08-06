@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zombie Archive</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo-area">
+
+        <img src="logo.png" class="logo" alt="Logo">
+
+        <span class="site-name">
+            Zombie Archive
+        </span>
+
+    </div>
+
+<nav class="navigation">
+
+<a class="active" href="index.html">Главная</a>
+
+<a href="news.html">Новости</a>
+
+<a href="encyclopedia.html">Энциклопедия</a>
+
+<a href="map.html">Карта</a>
+
+</nav>
+
+<button id="menuButton" class="menu-button">
+
+☰
+
+</button>
+
+</header>
+
+<!-- ============== SIDE PANEL ================= -->
+
+<div id="sideMenu" class="side-menu">
+
+<div class="side-header">
+
+<h2>Разделы</h2>
+
+<button id="closeMenu">✕</button>
+
+</div>
+
+<a href="#">Персонажи</a>
+
+<a href="#">Фракции</a>
+
+<a href="#">Предметы</a>
+
+<a href="#">Оружие</a>
+
+<a href="#">Локации</a>
+
+<a href="#">Монстры</a>
+
+<a href="#">История</a>
+
+<a href="#">Выжившие</a>
+
+<a href="#">Секреты</a>
+
+<a href="#">Настройки</a>
+
+</div>
+
+<div id="overlay"></div>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-overlay">
+
+<h1>
+
+Zombie Archive
+
+</h1>
+
+<p>
+
+Архив мира после конца цивилизации
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="encyclopedia.html" class="button">
+
+Энциклопедия
+
+</a>
+
+<a href="map.html" class="button secondary">
+
+Карта
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+<h2>
+
+Поиск статей
+
+</h2>
+
+<input
+
+type="text"
+
+id="searchInput"
+
+placeholder="Введите название статьи..."
+
+>
+
+</section>
+<!-- ================= НОВОСТИ ================= -->
+
+<section class="section reveal">
+
+    <div class="section-header">
+
+        <h2>Последние новости</h2>
+
+        <div class="slider-controls">
+
+            <button class="prev-news">&#10094;</button>
+            <button class="next-news">&#10095;</button>
+
+        </div>
+
+    </div>
+
+    <div class="carousel" id="newsCarousel">
+
+        <a href="news1.html" class="card searchable">
+
+            <img src="news1.jpg" alt="">
+
+            <div class="card-content">
+
+                <span class="date">10.08.2026</span>
+
+                <h3>Начало заражения</h3>
+
+                <p>
+                    История первых дней распространения вируса.
+                </p>
+
+            </div>
+
+        </a>
+
+        <a href="news2.html" class="card searchable">
+
+            <img src="news2.jpg" alt="">
+
+            <div class="card-content">
+
+                <span class="date">14.08.2026</span>
+
+                <h3>Военные потеряли контроль</h3>
+
+                <p>
+                    Правительство объявило чрезвычайное положение.
+                </p>
+
+            </div>
+
+        </a>
+
+        <a href="news3.html" class="card searchable">
+
+            <img src="news3.jpg" alt="">
+
+            <div class="card-content">
+
+                <span class="date">18.08.2026</span>
+
+                <h3>Последний сигнал</h3>
+
+                <p>
+                    Получено последнее сообщение из столицы.
+                </p>
+
+            </div>
+
+        </a>
+
+        <a href="news4.html" class="card searchable">
+
+            <img src="news4.jpg" alt="">
+
+            <div class="card-content">
+
+                <span class="date">22.08.2026</span>
+
+                <h3>Новая база выживших</h3>
+
+                <p>
+                    Найден укреплённый лагерь.
+                </p>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= ОБНОВЛЕНИЯ ================= -->
+
+<section class="section reveal">
+
+    <div class="section-header">
+
+        <h2>Обновления игры</h2>
+
+        <div class="slider-controls">
+
+            <button class="prev-update">&#10094;</button>
+            <button class="next-update">&#10095;</button>
+
+        </div>
+
+    </div>
+
+    <div class="carousel" id="updateCarousel">
+
+        <div class="card searchable">
+
+            <div class="card-content">
+
+                <h3>Версия 0.1</h3>
+
+                <p>
+
+                    Создан архив проекта.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card searchable">
+
+            <div class="card-content">
+
+                <h3>Версия 0.2</h3>
+
+                <p>
+
+                    Добавлены новые статьи энциклопедии.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card searchable">
+
+            <div class="card-content">
+
+                <h3>Версия 0.3</h3>
+
+                <p>
+
+                    Обновлена карта мира.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card searchable">
+
+            <div class="card-content">
+
+                <h3>Версия 0.4</h3>
+
+                <p>
+
+                    Добавлены изображения существ.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+  </section>
+  <!-- ================= КНОПКА НАВЕРХ ================= -->
+
+<button id="scrollTop" class="scroll-top" title="Наверх">
+
+    ↑
+
+</button>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-logo">
+
+        Zombie Archive
+
+    </div>
+
+    <div class="footer-text">
+
+        © 2026 • Архив проекта по миру зомби-апокалипсиса
+
+    </div>
+
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
